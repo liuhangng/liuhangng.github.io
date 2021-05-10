@@ -1,0 +1,32 @@
+npm install -g hexo-cli
+npm install hexo-deployer-git --save
+hexo init myBlog
+cd myBlog
+npm install
+
+## hexo配置
+默认主题 landscape
+next主题
+git clone https://github.com/next-theme/hexo-theme-next themes/next
+
+本地运行
+hexo clean && hexo s --debug	
+同步
+hexo d -g
+
+参考
+https://github.com/siqili0308/mzlogin.github.io
+
+hexo new "文章标题"
+ hexo new draft "文章标题"
+ 
+ travis CI 配置
+ 
+ 
+ web 分支： main  由hexo g -d自动push
+ 资源分支： master
+ 
+ 下一步计划：
+ 框架搭好
+ 
+
